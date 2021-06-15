@@ -16,17 +16,18 @@ console.log(outputNumber1);
 console.log(outputNumber2);
 
 // A2
-// let aee = "abc"
-// let a2 = aee.split("");
-// console.log(a2);
-// function merge2String(s1, s2) {
-//     let arr1 = s1.split("")
-//     let arr2 = s2.split("")
-//     let mergeString ;
-//     for (var i =1 ; i < arr1.length; i++) {
-        
-//     }
-// }
+
+function merge2String(s1, s2) {
+    let arr1 = s1.split("")
+    let arr2 = s2.split("")
+    for (var i =0 ; i < arr1.length; i++) {
+        arr1[i] += arr2[i];
+    }
+    return arr1.join("")
+}
+console.log(merge2String("abc", "123"));
+
+// B
 let fm = document.getElementById('val');
     fm.addEventListener("submit", function(e) {
         e.preventDefault();
