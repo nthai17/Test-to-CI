@@ -40,4 +40,4 @@ let fm = document.getElementById('val');
         } else {
             alert('Chúc may mắn lần sau!')
         }
-    })
+    });
