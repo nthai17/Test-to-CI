@@ -28,18 +28,16 @@ console.log(outputNumber2);
 //     }
 // }
 let fm = document.getElementById('val');
-function luckyNumber(){
     fm.addEventListener("submit", function(e) {
         e.preventDefault();
-        if (fm.input.value.trim() === "") {
+        if ((fm.input.value === "") || parseInt(fm.input.value) < 1 || parseInt(fm.input.value) > 10 ){
             alert('Bạn đã nhập sai!')
             return;
         }
-        let luckynum = math.random()*10;
+        let luckynum = Math.random()*10;
         if (parseInt(fm.input.value) == parseInt(luckynum)) {
             alert('Chúc mừng bạn trúng thưởng!')
         } else {
             alert('Chúc may mắn lần sau!')
         }
     })
-};
