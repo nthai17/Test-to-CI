@@ -36,8 +36,8 @@ let fm = document.getElementById('val');
         }
         let luckynum = Math.random()*10;
         if (parseInt(fm.input.value) == parseInt(luckynum)) {
-            alert('Chúc mừng bạn trúng thưởng!')
+            alert('Chúc mừng bạn trúng thưởng! - Số trúng thưởng là:' + parseInt(luckynum))
         } else {
-            alert('Chúc may mắn lần sau!')
+            alert('Chúc may mắn lần sau! - Số trúng thưởng là:' + parseInt(luckynum))
         }
     });
